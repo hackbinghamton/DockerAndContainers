@@ -30,6 +30,15 @@ CMD /app/program.sh
 
 Now, run `docker build .` Check your images with `docker image ls`—you should see one built a few seconds ago! Copy its id for the next step.
 
+Use `docker history <image-id>` to see the steps used in the creation of your image—they should roughly match your `Dockerfile`
+
 Finally, we can run our program with `docker run <image-id>`. Congratulations on making your first image!
 
 Once you're done, clean up your image with `docker image rm <image-id>`.
+
+# Additional Info
+Run `docker build` with `-t <tag>` to add a tag to your image. You can also add a tag after building with `docker tag`
+
+Try running `docker inspect <image-id>` to get a detailed look at the image contents.
+
+You can use the `RUN` instruction to run commands during the build process. **Exercise**: Try installing some commands during the above build process, and use them in your `program.sh`.
