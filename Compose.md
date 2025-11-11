@@ -42,9 +42,6 @@ services:
     image: adminer
     ports:
       - "8080:8080"
-
-volumes:
-  postgres_data:
 ```
 
 Then, we can run the file (and all services defined within it) using `docker compose up`, 
