@@ -1,6 +1,5 @@
-Welcome to our Docker and Containers workshop! Today we'll be diving into the 
+Welcome to our Docker and Containers workshop!
 
-- [Technical Background](TechnicalBackground.md)
 - [Installing Docker](InstallingProviders.md)
 - [Running your first container](YourFirstContainer.md)
 - [Building Images](Dockerfiles.md)
