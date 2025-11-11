@@ -12,7 +12,7 @@ For a longer-lived container, lets enter `docker run --interactive --tty alpine 
 > Alpine is an extremely lightweight version of linux, designed with container usage in mind. It is frequently used as the base for other images.
 > Note that Alpine does not include the common Bash interpreter, but only a posix-compliant sh shell.
 
-You should see your shell prompt change, as you're now running inside the container! Try poking around a bit—creating some files and running a few commands. Not that nothing you do inside the container should affect your host system, and any changes you make will be deleted when the container stops.
+You should see your shell prompt change, as you're now running inside the container! Try poking around a bit—creating some files and running a few commands. Note that nothing you do inside the container should affect your host system, and any changes you make will be deleted when the container stops.
 
 While the container is running, open another shell and run `docker container ls`. You should see exactly one entry, your currently open container.
 
